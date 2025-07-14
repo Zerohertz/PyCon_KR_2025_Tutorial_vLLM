@@ -1,0 +1,12 @@
+[project]
+name = "pycon-kr-2025-tutorial-vllm"
+version = "0.1.0"
+description = "PyCon Korea 2025 Tutorial: vLLM의 OpenAI-Compatible Server 톺아보기"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "loguru>=0.7.3",
+    "torch==2.7.0",
+    "transformers>=4.53.2",
+    "vllm==0.9.2",
+]
