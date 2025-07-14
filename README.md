@@ -17,7 +17,7 @@ uv sync
 <h3 align="center">How to Run?</h3>
 
 ```bash
-uv run ${PYTHON_SCRIPT}.py
+uv run src/${PYTHON_SCRIPT}.py
 ```
 
 ---
