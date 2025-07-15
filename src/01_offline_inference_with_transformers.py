@@ -3,7 +3,7 @@ from loguru import logger
 from transformers import AutoModelForCausalLM, AutoProcessor
 
 """
-$ uv run src/01_local_inference.py
+$ uv run src/01_offline_inference_with_transformers.py
 2025-07-14 23:21:39.663 | INFO     | __main__:main:9 - MODEL_NAME='Qwen/Qwen3-0.6B'
 2025-07-14 23:21:45.507 | INFO     | __main__:main:13 - Model & processor Loaded!
 2025-07-14 23:21:45.541 | INFO     | __main__:main:19 - prompt:
