@@ -5,13 +5,13 @@
 1. [`uv`](https://docs.astral.sh/uv/) 설치
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+wget -qO- https://astral.sh/uv/install.sh | sh
 ```
 
-2. 의존성 설치
+2. 의존성 및 실습에 사용할 `Qwen/Qwen3-0.6B` 설치
 
 ```bash
-uv sync
+make init
 ```
 
 <h3 align="center">How to Run?</h3>
