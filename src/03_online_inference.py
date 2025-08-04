@@ -46,6 +46,11 @@ async def main():
     logger.info("output_text:")
     if STREAM:
         async for chunk in response:
+            reasoning_content = getattr(
+                chunk.choices[0].delta, "reasoning_content", None
+            )
+            if reasoning_content:
+                print(reasoning_content, end="", flush=True)
             content = getattr(chunk.choices[0].delta, "content", None)
             if content:
                 print(content, end="", flush=True)
