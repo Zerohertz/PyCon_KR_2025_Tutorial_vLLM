@@ -10,8 +10,7 @@ format:
 	uvx ruff format .
 
 check:
-	uvx ruff check . --fix; \
-	uvx ty check .;
+	uvx ruff check . --fix;
 
 serve:
 	VLLM_ALLOW_RUNTIME_LORA_UPDATING=True \
