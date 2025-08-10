@@ -435,7 +435,7 @@ async def main():
         logger.error(f"실행 중 오류 발생: {str(e)}")
         logger.error(f"오류: {str(e)}")
         logger.error("vLLM 서버가 실행 중인지 확인해주세요:")
-        logger.error("$ vllm serve Qwen/Qwen3-0.6B --max-model-len 8192")
+        logger.error("$ make serve")
 
 
 if __name__ == "__main__":
