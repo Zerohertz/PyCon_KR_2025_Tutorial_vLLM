@@ -4,7 +4,7 @@ init:
 	uv venv
 	. .venv/bin/activate
 	uv sync
-	huggingface-cli download Qwen/Qwen3-0.6B
+	uv run huggingface-cli download Qwen/Qwen3-0.6B
 
 format:
 	uvx ruff format .
@@ -15,9 +15,11 @@ check:
 
 serve:
 	VLLM_ALLOW_RUNTIME_LORA_UPDATING=True \
-		vllm serve Qwen/Qwen3-0.6B \
+		uv run vllm serve Qwen/Qwen3-0.6B \
 		--max-model-len 8192 \
 		--reasoning-parser qwen3 \
+		--enable-auto-tool-choice \
+		--tool-call-parser hermes \
 		--enable-lora
 
 models:

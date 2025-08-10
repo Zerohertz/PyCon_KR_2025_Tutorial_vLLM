@@ -5,6 +5,7 @@ description = "PyCon Korea 2025 Tutorial: vLLM의 OpenAI-Compatible Server 톺�
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "huggingface-hub[cli]>=0.33.4",
     "loguru>=0.7.3",
     "openai>=1.90.0",
     "torch==2.7.0",
