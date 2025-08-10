@@ -1,3 +1,5 @@
+#!/usr/bin/env .venv/bin/python
+
 import asyncio
 
 from loguru import logger

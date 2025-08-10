@@ -1,3 +1,5 @@
+#!/usr/bin/env .venv/bin/python
+
 from loguru import logger
 from vllm import LLM, SamplingParams
 

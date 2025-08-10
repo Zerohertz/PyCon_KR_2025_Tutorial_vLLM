@@ -1,3 +1,5 @@
+#!/usr/bin/env .venv/bin/python
+
 import torch
 from loguru import logger
 from transformers import AutoModelForCausalLM, AutoProcessor

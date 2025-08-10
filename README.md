@@ -18,6 +18,8 @@ make init
 
 ```bash
 uv run src/${PYTHON_SCRIPT}.py
+# or
+src/${PYTHON_SCRIPT}.py
 ```
 
 ---
