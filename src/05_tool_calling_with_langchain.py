@@ -206,7 +206,7 @@ async def interactive_tool_calling():
         streaming=True,  # 스트리밍 활성화
     )
 
-    logger.info(f"🚀 대화형 LangChain Tool Calling 모드 시작")
+    logger.info("🚀 대화형 LangChain Tool Calling 모드 시작")
     logger.info(f"📡 서버: {BASE_URL}")
     logger.info(f"🤖 모델: {MODEL_NAME}")
     logger.info(f"🛠️ 사용 가능한 도구: {len(LANGCHAIN_TOOLS)}개")
