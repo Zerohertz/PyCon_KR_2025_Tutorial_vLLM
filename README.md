@@ -6,6 +6,9 @@
     <a href="https://www.slideshare.net/slideshow/vllm-openal-compatible-server-pycon-korea-tutorial-2025-0cff/282420006" target="_blank">
         <img src="https://img.shields.io/badge/SlideShare-008ED2?style=for-the-badge&logo=SlideShare&logoColor=white"/>
     </a>
+    <a href="REFERENCES.md" target="_blank">
+        <img src="https://img.shields.io/badge/References-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white"/>
+    </a>
 </p>
 
 <div align="center">
@@ -54,11 +57,3 @@ src/${PYTHON_SCRIPT}.py
     <td><img src="img/time_table_en.png" alt="English Time Table" /></td>
   </tr>
 </table>
-
----
-
-<h3 align="center">References</h3>
-
-- [vLLM Docs](https://docs.vllm.ai/)
-- [GitHub Star History](https://www.star-history.com/)
-- [Artificial Analysis](https://artificialanalysis.ai/)
