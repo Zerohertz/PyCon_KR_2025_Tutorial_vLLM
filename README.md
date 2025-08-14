@@ -3,7 +3,7 @@
 <h4 align="center">PyCon Korea Tutorial, 2025</h4>
 
 <p align="center">
-    <a href="https://www.slideshare.net/slideshow/vllm-openal-compatible-server-pycon-korea-tutorial-2025-0cff/282420006" target="_blank">
+    <a href="https://www.slideshare.net/slideshow/vllm-openal-compatible-server-pycon-korea-tutorial-2025-d250/282436716" target="_blank">
         <img src="https://img.shields.io/badge/SlideShare-008ED2?style=for-the-badge&logo=SlideShare&logoColor=white"/>
     </a>
     <a href="REFERENCES.md" target="_blank">
