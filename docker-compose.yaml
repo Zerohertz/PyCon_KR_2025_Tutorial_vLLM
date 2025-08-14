@@ -1,0 +1,28 @@
+# https://docs.vllm.ai/en/v0.9.2/examples/online_serving/prometheus_grafana.html#example-materials
+
+version: "3"
+
+services:
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus:v3.4.2
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "9090:9090"
+    volumes:
+      - ${PWD}/etc/prometheus.yaml:/etc/prometheus/prometheus.yml:ro
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:12.1.1
+    depends_on:
+      - prometheus
+    ports:
+      - "3000:3000"
+    volumes:
+      - ${PWD}/etc/grafana.json:/var/lib/grafana/dashboards/vllm-dashboard.json:ro
+      - ${PWD}/etc/datasources.yaml:/etc/grafana/provisioning/datasources/datasources.yaml:ro
+      - ${PWD}/etc/dashboards.yaml:/etc/grafana/provisioning/dashboards/dashboards.yaml:ro
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin

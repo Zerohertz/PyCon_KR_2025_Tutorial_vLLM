@@ -1,4 +1,4 @@
-.PHONY: init format check serve models load_lora unload_lora
+.PHONY: init format check serve models load_lora unload_lora dcu dcd
 
 init:
 	uv venv
@@ -33,3 +33,9 @@ unload_lora:
 	curl -X POST http://localhost:8000/v1/unload_lora_adapter \
 		-H "Content-Type: application/json" \
 		-d '{"lora_name": "phh/Qwen3-0.6B-TLDR-Lora"}'
+
+dcu:
+	docker compose up -d
+
+dcd:
+	docker compose down -v
